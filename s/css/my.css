@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+.progress{
+    height: 190px;
+}
+
+.pr1{
+    background-color: #92CB8B;
+}
+.pr2{
+    background-color: white;
+}
+.wpr1{
+    animation-name: wpr1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    width: 0%;
+}
+@keyframes wpr1{
+    0%{width: 0%}
+    100%{width: 100%}
+}
+.wpr2{
+    animation-name: wpr2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    width: 100%;
+}
+@keyframes wpr2{
+    0%{width: 100%}
+    100%{width: 0%}
+}
+.wpr3{
+    transform: scaleY(1);
+    animation-name: wpr3;
+    animation-delay: 1.4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes wpr3{
+    0%{transform: scaleY(1)}
+    100%{transform: scaleY(5)}
+}
+.loadlogo{
+    animation-name: loadlogo;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes loadlogo{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+.nnav{
+    background-color:#92CB8B;
+    transition: all 1s;
+   
+}
+.nnavp{
+    color: white;
+}
+.active:hover{
+    border-bottom: #fff 2px solid;
+    transition: all 0.4s;
+}
+
+.bg1{
+    background:url("../imges/bg1.png");
+    background-size:contain;
+    height: 500px;
+    background-repeat: repeat-x;
+    background-color: #C4DC8F;
+    transition: all 1s;
+}
+
+.ebg1{
+    background: url("../imges/ebg2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 300px;
+    
+    position: relative;
+}
+
+.myh1{
+    border-left: #92CB8B 5px solid;
+    padding-left: 10px;
+    color:#FF561E;
+   
+}
+
+.myp1{
+    font-size: 18px;
+    text-indent: 2em;
+    line-height: 1.8em;
+    margin-top: 20px;
+}
+.imga{
+    transform: scale(1);
+    transition:all  1s;
+    position: relative;
+}
+.imga:hover{
+    transform: scale(1.05);
+    transition:all  1s;
+    
+}
+.uu{
+    opacity: 1;
+    transition: all 1s;
+    cursor: pointer;
+    position: relative;
+}
+.uu:hover{
+    opacity: 0.7;
+    transition: all 1s;
+    cursor: pointer;
+}
+.uuu{
+    transform: translateX(0);
+    animation: uuu;
+    animation-duration: 1.6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes uuu{
+    0%{transform: translateX(0)}
+    100%{transform: translateX(-200%)}
+}
+.box1{
+    width: 100%;background-color: rgba(167,255,150,0.6);padding: 5px 20px;line-height: 1.6em
+}
+.bbox1{
+    text-align: left;
+    padding-top: 10px;
+}
+
+
+.mo{
+    animation-name: mo;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    color: red;
+}
+@keyframes mo{
+    0%{color: red;}
+    100%{color:rgba(147,0,2,1.00)}
+}
+
+.logo1{
+    position:absolute;
+    top: 24%;
+   right: 1%;
+    transition: all 1s;
+}
+.a0924{
+   display: none;
+}
+
+
+.goo{
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+@media (min-width: 576px) {
+    .logo1{
+        width: 80%;
+        right: 10%;
+        transition: all 1s;
+    }
+    .bg1{
+        height: 500px;
+        transition: all 1s;
+    }
+    .a0924{
+   display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo1{
+        width: 70%;
+        right: 16%;
+        transition: all 1s;
+    }
+    .bg1{
+        height: 600px;
+        transition: all 1s;
+    }
+       .a0924{
+   display: none;
+    }
+}
+
+@media (min-width: 992px) {
+      .logo1{
+        width: 70%;
+        right: 16%;
+        transition: all 1s;
+    }
+    .bg1{
+        height: 600px;
+        transition: all 1s;
+    }
+       .a0924{
+   display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo1{
+        width: 50%;
+       right: 25%;
+        transition: all 1s;
+    }
+    .bg1{
+        height: 650px;
+        transition: all 1s;
+    }
+    .a0924{
+   display: block;
+    }
+}
